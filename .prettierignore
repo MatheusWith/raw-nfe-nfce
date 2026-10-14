@@ -1,0 +1,12 @@
+node_modules
+test-results
+playwright-report
+blob-report
+downloads
+pnpm-lock.yaml
+
+# Tooling and planning artifacts that are not part of the automation source.
+.opencode
+.serena
+.codegraph
+.scratch

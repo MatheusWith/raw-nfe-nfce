@@ -1,0 +1,42 @@
+# Playwright
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+
+# Local environment and secrets: only the example file is versioned.
+/.env
+/.env.*
+!/.env.example
+
+# A1 digital certificates. These carry a private key and a CPF in the file
+# name, so they must never reach version control, wherever they are placed.
+*.pfx
+*.p12
+*.pem
+*.key
+
+# Folder that holds the local A1 certificates, referenced by E2E_CERT_PATH.
+/certificates/
+
+# Files downloaded by the automation.
+downloads/
+
+# Disposable sandbox for manual experiments; delete the folder to discard it.
+sandbox/
+
+# Tooling and planning artifacts that are not part of the automation source.
+.opencode/
+.serena/
+.codegraph/
+.scratch/
+
+# The workspace .gitignore at the repository root ignores every directory named
+# `adr` and every file named `AGENTS.md`, wherever they sit, which silently dropped
+# this project's own ADRs and its engineering instructions from the repository.
+# Re-included here, narrowly: these are project source, not workspace scratch. The
+# root file is shared with other projects and is left alone.
+!/AGENTS.md
+!/docs/adr/
